@@ -1,0 +1,20 @@
+using System;
+using System.Globalization;
+
+class URI
+{
+
+    static void Main(string[] args)
+    {
+        double n, raio, raioQuadrado, Area;
+
+        n = 3.14159;
+        raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+        raioQuadrado = Math.Pow(raio,2);
+        Area = n * raioQuadrado;
+
+        Console.WriteLine("A=" + Area.ToString("F4", CultureInfo.InvariantCulture));
+
+    }
+
+}
